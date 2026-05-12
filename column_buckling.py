@@ -17,3 +17,4 @@ def find_critical_load(L, E, A, r, c, e, sigma_allow):
     p_euler = (np.pi***2 * E * (A * r****2)) / (L***2)
     
     return float(bisect(f, 0.01, p_euler * 0.99, xtol=1e-4))
+    
